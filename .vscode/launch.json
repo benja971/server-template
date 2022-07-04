@@ -1,0 +1,14 @@
+{
+	"version": "1.0.0",
+	"configurations": [
+		{
+			"name": "launch PWA server in dev mode",
+			"type": "pwa-chrome",
+			"request": "launch",
+			"url": "http://localhost",
+			"webRoot": "${workspaceFolder}/public",
+			"console": "externalTerminal",
+			"preLaunchTask": "start dev environment"
+		}
+	]
+}

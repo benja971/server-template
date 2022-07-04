@@ -1,0 +1,53 @@
+{
+	"id": "express-server",
+
+	"name": "Express Server",
+	"short_name": "Express Server",
+	"description": "Node.js express http server made to use with RedBird https proxy",
+
+	"start_url": "/",
+	"scope": "/",
+
+	"display_override": ["window-controls-overlay"],
+	"display": "standalone",
+	"orientation": "any",
+
+	"background_color": "#333333",
+	"theme_color": "#7dc36b",
+
+	"icons": [
+		{
+			"src": "./img/round_icon_x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "./img/round_icon_x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "./img/maskable_icon_x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "./img/maskable_icon_x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+
+	"shortcuts": [],
+
+	"related_applications": [
+		{
+			"platform": "web",
+			"url": "https://express-server.nicolasgwy.dev"
+		}
+	]
+}
