@@ -3,6 +3,7 @@ const useragent = require("express-useragent");
 const fileUpload = require("express-fileupload");
 const compression = require("compression");
 const path = require("path");
+const cors = require("cors");
 
 const ip = require("ip");
 
@@ -59,6 +60,14 @@ const app = express();
 	app.use(express.urlencoded({ extended: true }));
 	app.use(useragent.express());
 	app.use(fileUpload());
+
+	// Enable CORS
+	app.use(
+		cors({
+			origin: "*",
+			credentials: true,
+		}),
+	);
 
 	// Filter and log connections
 	app.use(async (req, res, next) => {
