@@ -1,20 +1,12 @@
 # Express Server
 
-![Screenshot](public/img/screenchot.png)
-
 ### A template repo for quick express.js node server setup with:
 
 -   Several useful NPM scripts:
     -   `start`: Starts server with node.
     -   `start:nodemon`: Starts server with nodemon with `/private` folder ignored to prevent unwanted restart.
-    -   `start:dev`: (Windows) Starts nodemon server, SASS compiler, Google Chrome at `localhost` and File Explorer in work folder.
     -   `start:prod`: Starts server with PM2 as "express-server" and shows raw logs.
     -   `update:prod`: Git resets hard and pulls then installs NPM dependencies, flushes PM2 logs and restarts all PM2 processes.
-    -   `new:component`: Create new custom HTML5 element with:
-        -   A JavaScript file with a basic custom  element class and registration with given name.
-        -   An empty SCSS file for the component.
-        -   All references to the new files in `public/index.html`.
-    -   `sass` Starts sass compiler with no source map watching for `public/styles/scss` to `public/styles/css`.
     -   `logs`: Shows raw PM2 logs of current project server.
 -   HTTP server listening to port 80 by default or to corresponding port written in proxy `config.json` file.
 -   A dedicated SSL cert folder used by the HTTPS RedBird proxy.
