@@ -6,16 +6,13 @@
 	"scripts": {
 		"start": "node ./src/server.js",
 		"start:nodemon": "nodemon --ignore private src/server.js",
-		"start:dev": "dev.bat",
 		"start:prod": "pm2 start src/server.js --name \"express-server\" && npm run logs",
 		"update:prod": "git reset --hard && git pull && npm i && pm2 flush && clear && pm2 restart all --update-env && echo \"Update done\"",
-		"new:component": "node public/scripts/components/component.js",
-		"sass": "sass --no-source-map --watch public/styles/scss:public/styles/css",
 		"logs": "pm2 logs express-server --raw"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Iconejey/express-server.git"
+		"url": "git+https://github.com/benja971/server-template.git"
 	},
 	"keywords": [
 		"node",
@@ -30,11 +27,12 @@
 	"author": "Nicolas Gouwy",
 	"license": "UNLICENCED",
 	"bugs": {
-		"url": "https://github.com/Iconejey/express-server/issues"
+		"url": "https://github.com/benja971/server-template/issues"
 	},
-	"homepage": "https://github.com/Iconejey/express-server#readme",
+	"homepage": "https://github.com/benja971/server-template#readme",
 	"dependencies": {
 		"compression": "^1.7.4",
+		"cors": "^2.8.5",
 		"dotenv": "^10.0.0",
 		"express": "^4.17.1",
 		"express-fileupload": "^1.2.1",
